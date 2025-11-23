@@ -1,0 +1,29 @@
+{
+  "name": "nmnb-discord-bot",
+  "version": "1.0.0",
+  "description": "디스코드 반복 알림 봇",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "node test.js",
+    "test-bot": "node test-bot.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "reminder",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "node-cron": "^3.0.3",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.3.1"
+  }
+}
+
+
