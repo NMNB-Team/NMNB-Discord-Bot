@@ -4,6 +4,7 @@ import { scheduleWeeklyScrum } from './reminderManager.js';
 
 config();
 
+const port = process.env.PORT = 3000; // port 를 쓰진 않지만 render.com의 webService만 free tier가 가능해서.. 배포를 위해 설정
 const token = process.env.DISCORD_TOKEN;
 
 if (!token) {
