@@ -260,9 +260,9 @@ async function createThreadAndSendMessages(channel, templates, threadName) {
 
 // 매주 일요일 오후 11시에 주간 스크럼 메시지 전송
 export function scheduleWeeklyScrum(client) {
-  // 매주 일요일 23:00 (오후 11시)에 실행
-  // cron 표현식: 0 23 * * 0 (매주 일요일 23시 0분)
-  const cronExpr = '0 23 * * 0';
+  // 매주 일요일 20:00 (오후 11시)에 실행
+  // cron 표현식: 0 20 * * 0 (매주 일요일 20 0분)
+  const cronExpr = '0 20 * * 0';
   
   const task = cron.schedule(
     cronExpr,
