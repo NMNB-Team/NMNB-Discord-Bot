@@ -4,8 +4,12 @@ import { scheduleWeeklyScrum } from './reminderManager.js';
 
 config();
 
-const port = process.env.PORT = 3000; // port 를 쓰진 않지만 render.com의 webService만 free tier가 가능해서.. 배포를 위해 설정
 const token = process.env.DISCORD_TOKEN;
+
+// port 를 쓰진 않지만 render.com의 webService만 free tier가 가능해서.. 배포를 위해 설정
+import http from "http";
+http.createServer((req, res) => res.end("OK")).listen(process.env.PORT || 3000);
+
 
 if (!token) {
   console.error('❌ DISCORD_TOKEN이 .env 파일에 설정되지 않았습니다.');
